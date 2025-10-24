@@ -23,12 +23,14 @@ public class RandomSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Input.GetKeyDown(KeyCode.R))
+        { 
             SpawnGacha();
         }
         totalCount = items[0].count + items[1].count + items[2].count + items[3].count;
 
+     
+        
         for (int i = 0; i < items.Length; i++)
         {
             if (totalCount == 0)
